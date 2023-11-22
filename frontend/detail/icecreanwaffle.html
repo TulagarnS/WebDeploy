@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Delicio. | Icecream Waffle</title>
+        <style>
+          h4 {
+            display: flex;
+            flex-direction: row;
+        }
+          
+        h4:before,
+        h4:after {
+            content: "";
+            flex: 1 1;
+            border-bottom: 2px solid #000;
+            margin: auto;
+        }
+        </style>
+
+        <link rel="stylesheet" href="styles\detail.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;500;700&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+      </head>
+      
+      <body>
+      
+        <nav class="navbar bg-body-tertiary fixed-top" style="background-color: #f6dddd; padding: 0.8%; position: fixed;"> <!--nav code-->
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html" style="font-size: 30px; font-weight: bold; text-align: center;">Delicio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../search.html">Search</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      User Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../Login.html">Login</a></li>
+                      <li><a class="dropdown-item" href="../signup.html">Sign up</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about_us.html">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../contactus.html">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+    <main class="page">
+        <div class="recipe-page">
+          <section class="recipe-hero">
+            <img
+              src="assets\icecream.png"
+              class="img recipe-hero-img"
+            />
+            <article class="recipe-info">
+                <br>
+                <br>
+                <br>
+              <h1>Caramel Ice-Cream with Crispy Waffle</h1>
+              <br>
+              <p>
+                A waffle is a dish made from leavened batter or dough that 
+                is cooked between two plates that are patterned to give a characteristic size, 
+                shape, and surface impression. There are many variations based on the type of waffle 
+                iron and recipe used. Waffles are eaten throughout the world, particularly in Belgium, 
+                which has over a dozen regional varieties. Waffles may be made fresh or simply heated 
+                after having been commercially cooked and frozen.
+              </p>
+              <div class = "recipe-icons" >
+                <article  >
+                  <i ></i>
+                  <h5 class = "block" >prep time <br> 30 min.</h5>
+                </article>
+                <article>
+                  <i ></i>
+                  <h5 class = "block">cook time <br> 15 min </h5>
+                </article>
+                <article>
+                  <i ></i>
+                  <h5 class = "block">serving <br> 6 servings </h5>
+                </article>
+              </div>
+
+            </article>
+          </section>
+          
+          <!--INSTRUCTION วิธีทำ */ -->
+
+          <section class="recipe-content">
+            <article class = "block2" >
+              <h4>instructions</h4>
+              <div class="single-instruction">
+                <h5>
+                  <p>step 1</p>
+                  <div></div>
+                </h5>
+                <p>
+                  Sift rice flour, arrowroot and buckwheat flour into a large bowl. Add baking powder, cinnamon and sugar. Stir until combined. 
+                  Make a well in centre. 
+                  Whisk in Nuttelex, eggs and soy milk until smooth.
+                </p>
+              </div>
+              <!-- end of single instruction -->
+
+              <div class="single-instruction">
+                <h5>
+                  <p>step 2</p>
+                  <div></div>
+                </h5>
+                <p>
+                  Heat a waffle maker. Lightly spray the inside with oil. 
+                  Pour 1 ⁄3 cup of mixture onto the hotplate. 
+                  Close the lid and cook for 1-2 minutes or until lightly golden and crisp. 
+                  Transfer to a plate and keep warm. Repeat with the remaining mixture.
+                </p>
+              </div>
+              <!-- end of single instruction -->
+
+              <div class="single-instruction">
+                <h5>
+                  <p>step 3</p>
+                  <div></div>
+                </h5>
+                <p>
+                  For sauce, combine dates and 250ml (1 cup) water in a saucepan over medium heat. 
+                  Simmer for 5 minutes or until dates soften. 
+                  Add sugar and cook, stirring, for 2 minutes or until sugar dissolves. 
+                  Add coconut cream and vanilla. Simmer, stirring, for 2-3 minutes, until dates break down and mixture is a golden caramel colour. 
+                  Remove from heat and use a stick blender to puree until smooth.
+                </p>
+              </div>
+              <!-- end of single instruction -->
+
+              <!-- end of single instruction -->
+
+              <div class="single-instruction">
+                <h5>
+                  <p>step 4</p>
+                  <div></div>
+                </h5>
+                <p>
+                  Serve waffles with ice-cream, macadamias, banana and sauce.
+                </p>
+              </div>
+              <!-- end of single instruction -->
+
+
+
+            </article>
+            <article class="second-column">
+              <div class = "block2" >
+                <h4  >ingredients</h4>
+                <p class="single-ingredient">120g (2/3 cup) brown rice flour</p>
+                <p class="single-ingredient">125g (1 cup) arrowroot</p>
+                <p class="single-ingredient">2 tbsp buckwheat flour</p>
+                <p class="single-ingredient">2 1/2 tsp gluten-free baking powder</p>
+                <p class="single-ingredient">1/4 tsp ground cinnamon</p>
+                <p class="single-ingredient">50g (1/4 cup) coconut sugar</p>
+                <p class="single-ingredient">40g Nuttelex spread, melted, cooled</p>
+                <p class="single-ingredient">2 eggs</p>
+                <p class="single-ingredient">250ml (1 cup) soy milk</p>
+                <p class="single-ingredient">40g Nuttelex spread, melted, cooled</p>
+                <p class="single-ingredient">Dairy-free ice-cream, to serve</p>
+                <p class="single-ingredient">45g (1/4 cup) roasted salted macadamias</p>
+
+              </div>
+              <div class = "block2" >
+                <h4 >tools</h4>
+                <p class="single-tool">Hand Blender</p>
+                <p class="single-tool">Large Heavy Pot With Lid</p>
+                <p class="single-tool">Measuring Spoons</p>
+                <p class="single-tool">Measuring Cups</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- footer -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">© 2023 Delicio.</p>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="../index.html" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="../Login.html" class="nav-link px-2 text-muted">Login</a></li>
+            <li class="nav-item"><a href="../contactus.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+            <li class="nav-item"><a href="../about_us.html" class="nav-link px-2 text-muted">About Us</a></li>
+          </ul>
+        </footer>
+      </div>
+    </body>
+  </html>
+  </body>
+
+</html>

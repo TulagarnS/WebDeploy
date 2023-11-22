@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Delicio. | Contact us</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!--ref for navigation bar-->
+  <link rel="stylesheet" href="styles\contact.css">
+</head>
+<!--ref for navigation bar-->
+
+<body>
+  <!--Nav bar-->
+  <nav class="navbar bg-body-tertiary fixed-top" style="background-color: #f6dddd; padding: 0.8%; position: fixed;">
+    <!--nav bar-->
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"
+        style="font-size: 30px; font-weight: bold; text-align: center;">Delicio.</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="search.html">Search</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                User Account
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="signup.html">Sign up</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contactus.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--Contact Us-->
+  <section>
+    <div class="section-header">
+      <div class="container2">
+        <h2>Contact Us</h2>
+        <p>Have comments? Let us know!</p>
+      </div>
+    </div>
+    <!--Form-->
+    <div class="container2">
+      <div class="row">
+        <div class="contact-form">
+          <form action="" id="contact-form">
+            <h2>Send Message</h2>
+            <div class="input-box">
+              <input type="text" required="true" name="">
+              <span>Full Name</span>
+            </div>
+
+            <div class="input-box">
+              <input type="email" required="true" name="">
+              <span>Email</span>
+            </div>
+
+            <div class="input-box">
+              <textarea required="true" name=""></textarea>
+              <span>Type your Message...</span>
+            </div>
+
+            <div class="input-box">
+              <input type="submit" value="Send" name="">
+            </div>
+          </form>
+        </div>
+        <!-- pic -->
+        <div class="map">
+          <div id="googleMap"></div>
+
+          <script>
+            function myMap() {
+              var mapProp = {
+                center: new google.maps.LatLng(13.794461892682975, 100.32464106681938),
+                zoom: 18,
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+            }
+          </script>
+
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcoaUx150FHy5zw_UlOC7yGQdTFp5USlU&callback=myMap"></script>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--Footer-->
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">© 2023 Delicio.</p>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="login.html" class="nav-link px-2 text-muted">Login</a></li>
+        <li class="nav-item"><a href="contactus.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+        <li class="nav-item"><a href="about_us.html" class="nav-link px-2 text-muted">About Us</a></li>
+      </ul>
+    </footer>
+  </div>
+</body>
+
+</html>

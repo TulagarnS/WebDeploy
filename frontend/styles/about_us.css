@@ -1,0 +1,51 @@
+
+/* show the video on the right*/
+video {
+    width: 47%;
+    margin-top: 10%;
+    margin-right: 7%;
+    float:right ;
+  }
+/* Font-style of ABOUT US title*/
+.about{
+    margin-top: 10%;
+   margin-left: 10%;
+   font-size: 80px;
+   text-align: center;
+}
+
+/* for make image profile getting border and on the left*/
+.imgprofile {
+    float: left;
+    direction: ltr;
+    border-radius: 100%;
+    width: 140px;
+    margin-left: 8%;
+    margin-right: 3%;
+  }
+
+.namebox {
+    font-size: 16px;
+    text-align: left;
+}
+
+*{
+    font-family: Anybody;
+    color: #53504A;
+}
+footer {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 5px;
+  background-color:  #e0bb9c;
+  color: rgb(8, 8, 8);
+  position: absolute;
+  bottom: -20%;
+  left: 0%;
+  padding-right: 20px;
+}
+
+
+

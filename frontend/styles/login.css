@@ -1,0 +1,128 @@
+*{
+    font-family: anybody;
+}
+body{
+    background-image: url("../assets/bartender.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+.container{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+    
+}
+span{ /*text box*/
+    color: #fff;
+    font-size: medium;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+header{
+    color: #fff;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.input{ /*box that recieve input*/
+    height: 45px;
+    width: 87%;
+    border: none;
+    border-radius: 30px;
+    color: #000000;
+    font-size: 15px;
+    padding: 0 0 0 45px;
+    background: rgba(255,255,255,0.8);
+    outline: none;
+    align-self: center;
+    margin-top: 1%;
+}
+
+::-webkit-input-placeholder{
+    color:  black;
+}
+
+
+.submit{ /*box that can be clicked to go to other page*/
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 50%;
+    color: black;
+    background: rgb(223, 146, 146,0.9);
+    cursor: pointer;
+    transition: .3s ;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.submit-admin{ /*same but only for admin login*/
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 30%;
+    color: black;
+    background: rgb(223, 146, 146,0.7);
+    cursor: pointer;
+    transition: .3s ;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+h3{
+    color: #fff;
+    margin-left: 40%;
+    padding-top: 5%;
+}
+
+footer {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    background-color:  #f6dddd;
+    color: rgb(8, 8, 8);
+    position: absolute;
+    bottom: -2.4%;
+    left: 0%;
+    padding-right: 20px;
+  }
+

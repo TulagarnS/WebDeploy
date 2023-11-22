@@ -1,0 +1,104 @@
+*{
+    font-family: anybody;
+    color: #53504A;
+    justify-content: center;
+    align-items: center;
+}
+/* for all form*/
+.x{
+    font-size: 15px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+    border: 2px;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: #f9f1f1;
+    color:rgb(223, 146, 146);
+    border-color: rgb(223, 146, 146);
+    border-style: solid;
+    padding-top: 1%;
+}
+/* for heading text*/
+.title{
+    text-align: center;
+    margin-top: 3%;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* for textbox (pink)*/
+#add{
+    font-size: 15px;
+    margin-top: 1%;
+    border-radius: 20px;
+    border: none;
+    padding: 10px 30px;
+    background-color: #f6dddd;
+    margin-bottom: 2%;
+    transition: all 0.15s;
+    align-self: center;
+}
+#add::placeholder{
+    color: rgb(223, 146, 146);
+    font-weight: light;
+    font-size: 15px;
+}
+/* for textbox (white)*/
+#add2{
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    transition: all 0.15s;
+    background-color: rgb(255, 255, 255);
+    color:rgb(223, 146, 146);
+    border-color: rgb(223, 146, 146);
+    border-style: solid;
+}
+#add2::placeholder{
+    color: rgb(223, 146, 146);
+    font-weight: light;
+}
+/* for add,edit,remove button*/
+#submit{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    color: white;
+    background: rgb(223, 146, 146,0.9);
+    cursor: pointer;
+    transition: .3s ;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#submit:hover{
+    background-color: rgb(223, 146, 146);
+    box-shadow: #5f5c57 3px 3px 3px;
+}
+/* for cancel button*/
+#submit2{
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    color: white;
+    background: rgba(236, 174, 174, 0.9);
+    cursor: pointer;
+    transition: .3s ;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#submit2:hover{
+    background-color: rgb(223, 146, 146);
+    box-shadow: #5f5c57 3px 3px 3px;
+}

@@ -1,0 +1,101 @@
+*{
+    font-family: Anybody;
+    color: #53504A;
+}
+header{
+    padding-top: 1%;
+    text-align: center;
+    background-color: #D4C8BE;
+}
+
+
+
+
+h1{/*set all the h1*/
+    display: inline;
+    color: #000000;
+    justify-content: center;
+}
+
+
+
+.box{/*information box setting*/   
+    padding: 2.5%;
+    width: 40%;
+    margin-top: 4.5%;
+    position: relative; 
+    background: rgba(236, 222, 199, 0.884);
+    word-wrap: break-word;     /*make box change size relative to the text*/
+    overflow-wrap: break-word;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+}
+
+body{/*set all the body*/
+    min-height: 100vh;
+    display: grid;
+}
+
+.slider{/*sliderboxsize and jusify item at the start of the page(on the right)*/
+    height: 100%; /*size of the slider*/
+    position: absolute;
+    width: 99.1vw;
+    overflow: hidden;
+    place-items: start;
+}
+.slide-track{/*total width of 12 picture x 250px connect together and set moving time with 20s*/
+    display: flex;
+    width:calc(250px * 12) ;
+    animation: scroll 20s linear infinite;
+    
+}
+
+/*motion of the slider*/
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-250px*6));
+    }
+    
+}
+@media(prefers-reduce-motion:reduce){/*pause the pictures in slide that already passed to the left*/
+    .slide-track{
+        animation-play-state: paused;
+    }
+}
+
+.slide{ /*individual slide of the slider*/
+    
+    height: 100vh;/*image*/
+    width: 800px;
+    display: block;
+    align-items: center;
+    padding: 5px;
+    perspective: 80px;
+}
+img{ /*image size and starting position*/
+    width: 800px;
+    height: 100vh;
+    float: left;
+}
+
+footer {/*footer box*/
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 5px;
+    background-color:  #fcd1a9;
+    color: rgb(8, 8, 8);
+    position: absolute;
+    bottom: -2.4%;
+    left: 0%;
+    padding-right: 20px;
+  }
+
